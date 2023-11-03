@@ -97,7 +97,7 @@ my_colors <- c("Original" = "#63b5cc",
                "Delta" = "#315b94", 
                "Omicron" = "#7c9dad")
 # plot 
-ggplot(data = table_by_people_sub,
+p3 <- ggplot(data = table_by_people_sub,
        aes(x = week_format,
            y = grand_total)) + 
   geom_line(color = "gray",
@@ -142,6 +142,11 @@ ggplot(data = table_by_people_sub,
            color = "gray48",
            size = 2) + 
   theme 
+
+# save plot 
+ggsave("figure/fig3_loess_separate.png",
+       p3,
+       dpi=1000)
 
 # (2) plot 2: all waves in one curve
 
@@ -207,3 +212,7 @@ ggplot(data = table_by_people_sub,
   theme 
 
 
+# save plot 
+ggsave("figure/fig4_loess_all.png",
+       p4,
+       dpi=1000)

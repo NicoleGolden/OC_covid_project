@@ -42,7 +42,7 @@ my_colors <- c("Student" = "#63b5cc",
                "Grand Total" = "#b3b0a0")
 
 # figure 1
-ggplot(table_by_people, 
+p1 <- ggplot(table_by_people, 
        aes(week_format)) +
   geom_line(aes(y = student, 
                 colour = "Student")) +
@@ -70,6 +70,10 @@ ggplot(table_by_people,
     size = 0.2) + 
   theme
 
+# save plot
+ggsave("figure/fig1_table_by_people.png",
+       p1,
+       dpi=1000)
 
 #----------------------- Plot Table 2
 # (a) Table 2: confirmed cases plot
@@ -82,7 +86,7 @@ my_colors <- c("Elementary/Middle" = "#63b5cc",
                "Grand Total" = "#d6c254")
 
 # plot
-ggplot(table_by_school, 
+p2 <- ggplot(table_by_school, 
        aes(week_format)) +
   geom_line(aes(y = elementary_middle, 
                 colour = "Elementary/Middle")) +
@@ -110,3 +114,8 @@ ggplot(table_by_school,
     color = "gray", 
     size = 0.2) + 
   theme
+
+# save plot
+ggsave("figure/fig2_table_by_school.png",
+       p2,
+       dpi=1000)

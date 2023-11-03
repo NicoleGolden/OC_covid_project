@@ -13,12 +13,12 @@ After some basic data cleaning, I can visualize the raw data for each table.
 </p>
 
 <center>
-<img src="figure/fig1_table1.png" width="400"/>
+<img src="figure/fig1_table_by_people.png" width="400"/>
 <h6>Figure 1 (Image Source: Nicole Golden. Data Source: <a href="https://occovid19.ochealthinfo.com/coronavirus-in-oc" target=_blank>OC Health Care Agency</a></h6>
 </center>
 
 <center>
-<img src="figure/fig2_table2.png" width="400"/>
+<img src="figure/fig2_table_by_school.png" width="400"/>
 <h6>Figure 2 (Image Source: Nicole Golden. Data Source: <a href="https://occovid19.ochealthinfo.com/coronavirus-in-oc" target=_blank>OC Health Care Agency</a></h6>
 </center>
 
@@ -31,13 +31,13 @@ ggplot2 package from R provides plot using loess model. I used two methods to pl
 </p>
 
 <center>
-<img src="figure/fig3_loess_all.png" width="400"/>
-<h6>Figure 3 (Image Source: Nicole Golden. Data Source: <a href="https://occovid19.ochealthinfo.com/coronavirus-in-oc" target=_blank>OC Health Care Agency</a></h6>
+<img src="figure/fig3_loess_separate.png" width="400"/>
+<h6>Figure 3 (Image Source: Nicole Golden. Data Source:  <a href="https://occovid19.ochealthinfo.com/coronavirus-in-oc" target=_blank>OC Health Care Agency</a></h6>
 </center>
 
 <center>
-<img src="figure/fig4_loess_separate.png" width="400"/>
-<h6>Figure 4 (Image Source: Nicole Golden. Data Source:  <a href="https://occovid19.ochealthinfo.com/coronavirus-in-oc" target=_blank>OC Health Care Agency</a></h6>
+<img src="figure/fig4_loess_all.png" width="400"/>
+<h6>Figure 4 (Image Source: Nicole Golden. Data Source: <a href="https://occovid19.ochealthinfo.com/coronavirus-in-oc" target=_blank>OC Health Care Agency</a></h6>
 </center>
 
 <p class="lead">
